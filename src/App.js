@@ -8,7 +8,7 @@ const App = () => {
 
   // Fetch bots from the server
   useEffect(() => {
-    fetch("http://localhost:8001/bots")
+    fetch("https://botbattlr-o1b8.onrender.com")
       .then((response) => response.json())
       .then((data) => setBots(data));
   }, []);
